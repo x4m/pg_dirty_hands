@@ -21,6 +21,7 @@ PG_MODULE_MAGIC;
 #include "access/parallel.h"
 #include "access/relscan.h"
 #include "access/sysattr.h"
+#include "access/table.h"
 #include "access/transam.h"
 #include "access/tuptoaster.h"
 #include "access/valid.h"
@@ -47,7 +48,6 @@ PG_MODULE_MAGIC;
 #include "utils/relcache.h"
 #include "utils/snapmgr.h"
 #include "utils/syscache.h"
-#include "utils/tqual.h"
 
 #define		FRM_NOOP				0x0001
 #define		FRM_INVALIDATE_XMAX		0x0002
